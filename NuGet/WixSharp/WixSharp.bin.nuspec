@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Unofficial.WixSharp.bin</id>
+    <version>1.14.2.0</version>
+    <title>Wix# (WixSharp) - Binaries</title>
+    <authors>Oleg Shilo</authors>
+    <owners>Oleg Shilo</owners>
+    <licenseUrl>https://github.com/oleg-shilo/wixsharp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/oleg-shilo/wixsharp</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/oleg-shilo/wixsharp/master/Documentation/wiki_images/wixsharp_logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Wix# is a framework for building a complete MSI or WiX source code by using build script files written with the C# syntax.
+The package contains Wix# binaries only.
+
+In order to use this package you need have WiX Toolset installed.
+The package is tested against WIX (Windows Installer Xml) Toolset v3.10 (v3.10.2103.0)</description>
+    <summary>Wix# (WixSharp) - Binaries</summary>
+    <releaseNotes>Release v1.14.2.0
+* Fix collision possibility for GetHashCode32(): use (uint) instead of Math.Abs()
+* Issue #786: NullReferenceException on FindClientAssemblyInCallStack
+* Dynamic Localization - bootstrapper support
+* Modified `Compiler.BuildMsi(string path)` to return potentially modified input path
+
+
+</releaseNotes>
+    <copyright>Copyright (C) 2008-2019 Oleg Shilo</copyright>
+    <language>en-AU</language>
+    <tags>C# scripting msi install setup wix</tags>
+    <references>
+      <reference file="BootstrapperCore.dll" />
+      <reference file="Microsoft.Deployment.WindowsInstaller.dll" />
+      <reference file="WixSharp.dll" />
+      <reference file="WixSharp.Msi.dll" />
+      <reference file="WixSharp.UI.dll" />
+    </references>
+  </metadata>
+  <files>
+    <file src="build\WixSharp.bin.targets" target="build\WixSharp.bin.targets" />
+    <file src="lib\BootstrapperCore.dll" target="lib\BootstrapperCore.dll" />
+    <file src="lib\BootstrapperCore.xml" target="lib\BootstrapperCore.xml" />
+    <file src="lib\Microsoft.Deployment.WindowsInstaller.dll" target="lib\Microsoft.Deployment.WindowsInstaller.dll" />
+    <file src="lib\Microsoft.Deployment.WindowsInstaller.xml" target="lib\Microsoft.Deployment.WindowsInstaller.xml" />
+    <file src="lib\nbsbuilder.exe" target="lib\nbsbuilder.exe" />
+    <file src="lib\WixSharp.dll" target="lib\WixSharp.dll" />
+    <file src="lib\WixSharp.Msi.dll" target="lib\WixSharp.Msi.dll" />
+    <file src="lib\WixSharp.Msi.xml" target="lib\WixSharp.Msi.xml" />
+    <file src="lib\WixSharp.UI.dll" target="lib\WixSharp.UI.dll" />
+    <file src="lib\WixSharp.UI.xml" target="lib\WixSharp.UI.xml" />
+    <file src="lib\WixSharp.xml" target="lib\WixSharp.xml" />
+  </files>
+</package>
